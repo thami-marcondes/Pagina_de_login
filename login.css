@@ -1,0 +1,117 @@
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background: linear-gradient(#000000,rgba(63, 58, 58, 0.8));
+    color: white;
+    background:url('montanha.jpg');
+    background-size: cover;
+}
+
+h2{
+    margin-top: 3px;
+}
+.box-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 60px 64px;
+    border-radius: 20px;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+  top: -8px;
+  left: 0px;
+  font-size: 11px;
+  opacity: 1;
+  outline: none;
+  color: #00d5db;
+
+}
+
+.inputText {
+  font-size: 14px;
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background: none;
+  margin-bottom: 16px;
+
+}
+
+.inputText:focus-visible {
+  outline: none;
+  
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 4px;
+  top: 8px;
+  transition: 0.2s ease all;
+  color: rgb(255, 255, 255);
+}
+
+.usuario{
+    position: relative;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    background:none;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 20px;
+    border:1px solid rgba(255, 255, 255, 0.781);
+    color:  white;
+    font-weight: 500;
+    font-family: 'Roboto';
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #00d5db;
+    transition: 00.2s;
+    color: black;
+    border-color: #00d5db;
+}
+    
+.link{
+    color: white;
+}
+.link:hover{
+    color: #00d5db;
+}
+
+.forgot-password{
+    font-size: 14px;
+}
+
+.forgot-password span:first-of-type{
+    margin-right: 8px;
+}
+
+
